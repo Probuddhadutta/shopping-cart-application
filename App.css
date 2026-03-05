@@ -32,3 +32,22 @@ nav a {
   display: flex;
   gap: 20px;
 }
+
+
+.background-image {
+  background-image: url('path/to/your-background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.landing {
+  /* other landing styles like text color, layout, etc. */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
