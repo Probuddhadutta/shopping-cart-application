@@ -1,53 +1,153 @@
+/* ===== Global ===== */
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
+/* ===== Navbar ===== */
 nav {
   background: green;
-  padding: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 nav a {
   color: white;
   margin-right: 20px;
   text-decoration: none;
+  font-size: 1rem;
 }
 
-.landing {
-  text-align: center;
-  padding: 100px;
-  background: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
-  background-size: cover;
-  color: white;
+nav a:hover {
+  text-decoration: underline;
 }
 
-.card, .cart-card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 10px;
-}
-
-.product-grid {
-  display: flex;
-  gap: 20px;
-}
-
-
+/* ===== Landing Page ===== */
 .background-image {
-  background-image: url('path/to/your-background-image.jpg');
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/21/14/53/tree-1845066_1280.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .landing {
-  /* other landing styles like text color, layout, etc. */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  color: white;
+  height: 100vh;
+  padding: 20px;
 }
 
+.landing h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.landing p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* ===== Get Started Button ===== */
+.get-started-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #45a049;
+}
+
+/* ===== Product Grid ===== */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ===== Product Card / Cart Card ===== */
+.card,
+.cart-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* ===== Cart Page ===== */
+.cart-page {
+  padding: 30px;
+}
+
+.cart-page h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cart-page h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.cart-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ===== Continue Shopping Button ===== */
+.continue-shopping-btn {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.continue-shopping-btn:hover {
+  background-color: #1976D2;
+}
+
+/* ===== Checkout Button ===== */
+.checkout-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #45a049;
+}
